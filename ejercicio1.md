@@ -10,3 +10,9 @@ Como este es un nuevo proyecto, se necesita crear un nuevo repositorio. Utilice 
 **ProTip**
 
 Después de inicializar un repositorio, se crea un nuevo subdirectorio oculto llamado **.git.** Este subdirectorio contiene los metadatos que Git utiliza para almacenar su información. Si está interesado en los detalles, use la línea de comandos para explorar los contenidos.
+
+**Solucion**
+
+'''
+> git init
+'''
