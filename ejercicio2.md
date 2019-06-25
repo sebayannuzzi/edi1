@@ -47,3 +47,53 @@ Los cambios del repositorio remoto se fusionan automáticamente en la rama en la
 Tire de los cambios desde el control remoto a su rama maestra.
 
 En el siguiente paso exploraremos qué cambios se han hecho.
+
+**Paso 4 - Registro Git**
+
+Como se describe en el escenario anterior, puede usar el comando 
+>git log 
+
+para ver el historial del repositorio. 
+
+El comando 
+>git show 
+
+le permitirá ver los cambios realizados en cada confirmación.
+
+En este ejemplo, la salida del registro de git muestra una nueva confirmación por "DifferentUser@JoinScrapbook.com" con el mensaje "Corrección para el error # 1234". La salida de git show resalta las nuevas líneas agregadas al archivo en verde.
+
+**Protip**
+
+Use el comando 
+>git log --grep = "# 1234" 
+
+para encontrar todas las confirmaciones que contienen # 1234.
+
+**Paso 5 - Git Fetch**
+
+El comando git pull es una combinación de dos comandos diferentes, **git fetch y git merge.** 
+>git fetch
+
+Fetch descarga los cambios del repositorio remoto en una rama separada llamada remotes / <remote-name> / <remote-branch-name>. Se puede acceder a la sucursal usando git checkout.
+
+Usar git fetch es una excelente manera de revisar los cambios sin afectar tu rama actual. El formato de nomenclatura de las sucursales es lo suficientemente flexible como para que pueda tener varios controles remotos y sucursales con el mismo nombre y cambiar fácilmente entre ellas.
+
+El siguiente comando fusionará los cambios recuperados en el maestro.
+
+>git merge remotes
+
+<remote-name> / <remote-branch-name> master
+
+Cubriremos la fusión con más detalle en un escenario futuro.
+
+**Tarea**
+
+Se han realizado cambios adicionales en el repositorio de origen. Use git fetch para descargar los cambios y luego verifique la rama para verlos.
+
+**Protip**
+
+Puede ver una lista de todas las ramas remotas usando el comando 
+
+>git branch -r
+
+
