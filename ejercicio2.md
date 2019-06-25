@@ -23,7 +23,7 @@ Si utiliza
 que se analiza en un escenario futuro, entonces la ubicación desde la que está clonando se agregará automáticamente como un control remoto con el origen del nombre.
 
 
-### Paso 2 - Git Push
+**Paso 2 - Git Push**
 
 Cuando esté listo para compartir sus compromisos, debe enviarlos a un repositorio remoto a través de
 > git push
